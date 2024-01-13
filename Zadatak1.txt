@@ -7,13 +7,11 @@
     <meta name="keywords" content="ključna riječ 1, ključna riječ 2, ključna riječ 3">
     <meta name="author" content="Vaše ime ili naziv autora">
     
-    <title>Naslov vaše stranice</title>
+  <title>Projektni Zadatak</title>
     
-    <!-- Dodatne stilizirane poveznice, ako ih koristite -->
-    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Sadržaj vaše stranice ovdje -->
-
+  
 </body>
 </html>
