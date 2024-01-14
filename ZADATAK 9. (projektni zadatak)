@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opis vaše stranice ovdje.">
+    <meta name="keywords" content="ključna riječ 1, ključna riječ 2, ključna riječ 3">
+    <meta name="author" content="Ante Žili">
+
+    <title>O nama</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        main {
+            text-align: left;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Dobrodošli na našu web stranicu!</h1>
+            <p>Najnovije vijesti, informacije i još mnogo toga.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Početna stranica</a></li>
+                <li><a href="#">Novosti</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>O nama</h1>
+
+        <p>Naša tvrtka osnovana je s ciljem pružanja vrhunskih proizvoda i usluga našim klijentima.</p>
+
+        <p>S dugogodišnjim iskustvom u industriji, ponosno ističemo da smo lideri u inovacijama i kvaliteti.</p>
+
+        <p>Posvećeni smo radu s našim partnerima kako bismo zajedno postigli izvrsnost u svemu što radimo.</p>
+
+        <!-- Video element -->
+        
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/oq1dZd10Bmc?si=K6vZMRqhw1XuZI9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+     
+    </main>
+
+    <footer>
+        <p>&copy; 2024. Copyright/Sva prava pridržana. | <a href="https://github.com/azili1" target="_blank">Ante Žili-GitHub</a></p>
+    </footer>
+</body>
+</html>
