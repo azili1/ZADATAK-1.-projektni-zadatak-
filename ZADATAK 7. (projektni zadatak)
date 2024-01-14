@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opis vaše stranice ovdje.">
+    <meta name="keywords" content="ključna riječ 1, ključna riječ 2, ključna riječ 3">
+    <meta name="author" content="Ante Žili">
+    
+    <title>Kontakt</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+		
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Dobrodošli na našu web stranicu!</h1>
+            <p>Najnovije vijesti, informacije i još mnogo toga.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Početna stranica</a></li>
+                <li><a href="#">Novosti</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <main>
+		<h2>Kontakt</h2>
+		
+        <form>
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" required>
+
+            <label for="prezime">Prezime:</label>
+            <input type="text" id="prezime" name="prezime" required>
+
+            <label for="email">E-mail adresa:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="drzava">Država:</label>
+            <select id="drzava" name="drzava">
+                
+                <option value="hrvatska">Hrvatska</option>
+                <option value="SAD">SAD</option>
+                <option value="bih">Bosna i Hercegovina</option>
+				<option value="Kanada">Kanada</option>
+				<option value="Njemačka">Njemačka</option>
+            </select>
+
+            <label for="opis">Opis:</label>
+            <textarea id="opis" name="opis" rows="4" required></textarea>
+
+            <input type="submit" value="Pošalji">
+		
+			<iframe
+            width="100%"
+            height="400"
+            frameborder="0"
+            style="border:0"
+            src="<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d347.6690257733717!2d15.961363982684022!3d45.804204244573164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shr!2shr!4v1705242340043!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            </iframe>
+			
+        </form>
+    </main>
+
+    <footer>
+         <p>&copy; 2024. Copyright/Sva prava pridržana. | <a href="https://github.com/azili1" target="_blank">Ante Žili-GitHub</a></p>
+       
+    </footer>
+
+</body>
+</html>
