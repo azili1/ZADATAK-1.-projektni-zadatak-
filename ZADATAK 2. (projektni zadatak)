@@ -8,19 +8,57 @@
     <meta name="author" content="Ante Žili">
     
     <title>Projektni zadatak</title>
-    
-  
+
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .smanjena-slika {
+            width: 800px;
+            height: auto;
+        }
+
+       
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <header>
-       
         <div class="banner">
             <h1>Dobrodošli na našu web stranicu!</h1>
             <p>Najnovije vijesti, informacije i još mnogo toga.</p>
         </div>
 
-    
         <nav>
             <ul>
                 <li><a href="#">Početna stranica</a></li>
@@ -32,7 +70,10 @@
         </nav>
     </header>
 
-   
+    <main>
+       
+    </main>
 
+    
 </body>
 </html>
