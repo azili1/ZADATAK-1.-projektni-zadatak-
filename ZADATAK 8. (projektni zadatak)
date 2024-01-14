@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opis vaše stranice ovdje.">
+    <meta name="keywords" content="ključna riječ 1, ključna riječ 2, ključna riječ 3">
+    <meta name="author" content="Ante Žili">
+    
+    <title>Galerija Slika</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+		   
+		
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+		
+      
+		
+		
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Dobrodošli na našu web stranicu!</h1>
+            <p>Najnovije vijesti, informacije i još mnogo toga.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Početna stranica</a></li>
+                <li><a href="#">Novosti</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <div class="gallery img">
+            <!-- Dodajte više slika sa figcaption-om -->
+            
+			<figure>
+				<img src="https://podravkaiovariations.blob.core.windows.net/5c0d0dac-b2d5-11ee-b966-2a73b9f9c64c/v/5a667e06-64be-11eb-aef3-0242ac130010/1600x3200-5a668d88-64be-11eb-ac4d-0242ac130010.webp" alt="Hladna rolada" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/5c0d0dac-b2d5-11ee-b966-2a73b9f9c64c/v/5a667e06-64be-11eb-aef3-0242ac130010/1600x3200-5a668d88-64be-11eb-ac4d-0242ac130010.webp', 'Hladna rolada')">
+				<figcaption>Hladna rolada</figcaption>
+			</figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/77c2e96c-b30d-11ee-81b3-d2eef7c5bf7b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Kiflice" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/77c2e96c-b30d-11ee-81b3-d2eef7c5bf7b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Kiflice')">
+                <figcaption>Kiflice</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/37a4a5e2-b2b2-11ee-a6ef-06c93471ece0/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Kruh" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/37a4a5e2-b2b2-11ee-a6ef-06c93471ece0/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Kruh')">
+                <figcaption>Kruh</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/df1ffe82-b2af-11ee-a535-d2eef7c5bf7b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Djedovi brkovi" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/df1ffe82-b2af-11ee-a535-d2eef7c5bf7b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Djedovi brkovi')">
+                <figcaption>Djedovi brkovi</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/6ebe6988-b234-11ee-b94b-a6cc03f46872/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Hladna salata" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/6ebe6988-b234-11ee-b94b-a6cc03f46872/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Hladna salata')">
+                <figcaption>Hladna salata</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/8c037618-aefc-11ee-9325-2a73b9f9c64c/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Kroasani" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/8c037618-aefc-11ee-9325-2a73b9f9c64c/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Kroasani')">
+                <figcaption>Kroasani</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/abcba1e6-abb4-11ee-b12a-d2eef7c5bf7b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Bijela pita" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/abcba1e6-abb4-11ee-b12a-d2eef7c5bf7b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Bijela pita')">
+                <figcaption>Bijela pita</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/972fd4ce-9a6a-11ee-8656-9a369a7b9494/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Riža sa šampinjonima" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/972fd4ce-9a6a-11ee-8656-9a369a7b9494/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Riža sa šampinjonima')">
+                <figcaption>Riža sa šampinjonima</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/ad9a97ae-978a-11ee-a561-7e7e31fd0329/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Muffini" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/ad9a97ae-978a-11ee-a561-7e7e31fd0329/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Muffini')">
+                <figcaption>Muffini</figcaption>
+            </figure>
+			
+			<figure>
+                <img src="https://podravkaiovariations.blob.core.windows.net/5854576e-9607-11ee-adb7-06e32368ce85/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Pečena orada" onclick="openModal('https://podravkaiovariations.blob.core.windows.net/5854576e-9607-11ee-adb7-06e32368ce85/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp', 'Pečena orada')">
+                <figcaption>Pečena orada</figcaption>
+            </figure>
+
+
+			
+        </div>
+
+        
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img id="modalImg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+         <p>&copy; 2024. Copyright/Sva prava pridržana. | <a href="https://github.com/azili1" target="_blank">Ante Žili-GitHub</a></p>
+       
+    </footer>
+
+    <script>
+        function openModal(src, alt) {
+            document.getElementById('myModal').style.display = 'block';
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalImg').alt = alt;
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
