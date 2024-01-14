@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opis vaše stranice ovdje.">
+    <meta name="keywords" content="ključna riječ 1, ključna riječ 2, ključna riječ 3">
+    <meta name="author" content="Ante Žili">
+    
+    <title>Projektni zadatak</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .smanjena-slika {
+            width: 450px;
+            height: auto;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Dobrodošli na našu web stranicu!</h1>
+            <p>Najnovije vijesti, informacije i još mnogo toga.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Početna stranica</a></li>
+                <li><a href="#">Novosti</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Dobrodošli na našu stranicu za recepte!</h1>
+        <h2>Istražite raznovrsne recepte za ukusne obroke.</h2>
+
+        <p>Ovdje ćete pronaći mnoštvo recepata za brza i jednostavna jela koja možete pripremiti kod kuće.</p>
+
+        <p>Bilo da ste početnik u kuhinji ili iskusni kuhar, naša kolekcija recepata zadovoljit će svačiji ukus.</p>
+
+        <p>Proučite naše slike jela kako biste unaprijedili svoje kulinarske vještine i inspirirali se za sljedeći obrok.</p>
+
+        <!-- Slika sa opisom -->
+        <figure>
+            <img class="smanjena-slika" src="https://podravkaiovariations.blob.core.windows.net/02cd9bec-6424-11eb-b432-0242ac120013/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1600x1200-f2b21938-64bc-11eb-9498-0242ac130010.webp" alt="Piletina sa povrćem">
+            <figcaption>Piletina sa svježim povrćem - jednostavan i ukusan obrok.</figcaption>
+        </figure>
+    </main>
+
+    <!-- Sadržaj vaše stranice ovdje -->
+
+</body>
+</html>
