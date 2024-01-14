@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opis vaše stranice ovdje.">
+    <meta name="keywords" content="ključna riječ 1, ključna riječ 2, ključna riječ 3">
+    <meta name="author" content="Ante Žili">
+    
+    <title>Najnovije</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .thumbnail {
+            width: 150px; 
+            height: auto;
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        article img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        article h3 {
+            margin-top: 0;
+        }
+
+        article p {
+            margin-bottom: 10px;
+        }
+
+        article a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+		 header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="banner">
+            <h1>Dobrodošli na našu web stranicu!</h1>
+            <p>Najnovije vijesti, informacije i još mnogo toga.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Početna stranica</a></li>
+                <li><a href="#">Novosti</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Galerija</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <h1>Članci</h1>
+
+       
+        <article>
+            <img class="thumbnail" src="https://podravkaiovariations.blob.core.windows.net/28f55014-6404-11eb-a810-0242ac120031/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1600x1200-f2b21938-64bc-11eb-9498-0242ac130010.webp" alt="Thumbnail članka 1">
+            <h3>Kolač od trešanja.</h3>
+            <p>Slatki voćni kolač od trešanja. Vrlo jednostavan recept. Savršen za ljetne dane.</p>
+            <p>Datum objave: 1. siječnja 2024.</p>
+            <a href="#">Više o članku</a>
+        </article>
+
+      
+        <article>
+            <img class="thumbnail" src="https://podravkaiovariations.blob.core.windows.net/7f4df9c2-b25b-11ee-9f81-2222be4e554e/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1600x1200-f2b21938-64bc-11eb-9498-0242ac130010.webp" alt="Thumbnail članka 2">
+            <h3>Rižoto sa povrćem.</h3>
+            <p>Ovakav rižoto može biti prilog, ali i samostalni obrok.</p>
+            <p>Datum objave: 2. siječnja 2024.</p>
+            <a href="#">Više o članku</a>
+        </article>
+		
+		
+		<article>
+            <img class="thumbnail" src="https://podravkaiovariations.blob.core.windows.net/87974446-6388-11eb-8055-0242ac12004b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1600x1200-f2b21938-64bc-11eb-9498-0242ac130010.webp" alt="Thumbnail članka 2">
+            <h3>Pečena rebarca.</h3>
+            <p>Uživajte u sočnom pečenju uz krumpir s ružmarinom, timijanom i dimljenom crvenom paprikom.</p>
+            <p>Datum objave: 4. siječnja 2024.</p>
+            <a href="#">Više o članku</a>
+        </article>
+		
+		<article>
+            <img class="thumbnail" src="https://podravkaiovariations.blob.core.windows.net/6a80a3f2-63c4-11eb-b24a-0242ac12003b/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Thumbnail članka 2">
+            <h3>Sarma.</h3>
+            <p>Savršeni recept za sve ljubitelje sarme.</p>
+            <p>Datum objave: 6. siječnja 2024.</p>
+            <a href="#">Više o članku</a>
+        </article>
+		
+		<article>
+            <img class="thumbnail" src="https://podravkaiovariations.blob.core.windows.net/c69c7a1a-63ee-11eb-835a-0242ac120018/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/480x360-f2b21622-64bc-11eb-a2bd-0242ac130010.webp" alt="Thumbnail članka 2">
+            <h3>Mesna štruca.</h3>
+            <p>Mesna štruca sa kuhanim jajima.</p>
+            <p>Datum objave: 9. siječnja 2024.</p>
+            <a href="#">Više o članku</a>
+        </article>
+		
+		
+
+        
+
+    </main>
+
+    <footer>
+	    <p>&copy; 2024. Copyright/Sva prava pridržana. | <a href="https://github.com/azili1" target="_blank">Ante Žili-GitHub</a></p>
+  
+    </footer>
+
+</body>
+</html>
